@@ -13,14 +13,18 @@
     place-items: center;
 }
 
-.about__me >img{
+.about__meImg{
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    height: 100%;
+   
+    
+    
 }
 
-.about__me >img:hover{
+.about__meImg:hover{
     transform: rotate(0deg);
 }
 

@@ -4,8 +4,26 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
 import {BsWhatsapp} from 'react-icons/bs'
 import ContactData from './ContactData';
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
+
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(`${process.env.REACT_APP_YOUR_SERVICE_ID}`, `${process.env.REACT_APP_YOUR_TEMPLATE_ID}`, form.current, `${process.env.REACT_APP_YOUR_PUBLIC_KEY}`)
+      .then((result) => {
+          console.log(result.text);
+          alert("SUCCESS!")
+      }, (error) => {
+          console.log(error.text);
+          alert("Something went wrong!", error)
+      });
+  };
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -31,10 +49,11 @@ const Contact = () => {
 
         {/* form */}
 
-        <form action="">
-          <input type="text" name='name' placeholder='Your Full name' required/>
-          <input type="email" name='email' placeholder='Your Email' required/>
-          <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+        <form  ref={form} onSubmit={sendEmail}>
+          <input  type="text" name='name' id='name' placeholder='Your Full name' required/>
+          <input  type="email" name='email' id='email' placeholder='Your Email' required/>
+          <input  type="text" name='subject' id='subject' placeholder='Subject' required/>
+          <textarea  name="message" rows="7" placeholder='Your Message' required></textarea>
           <button type="submit" className='btn btn-primary'>Send Message</button>
         </form>
       </div>

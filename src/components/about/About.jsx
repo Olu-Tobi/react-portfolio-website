@@ -1,6 +1,5 @@
 import React from 'react'
 import "./About.css";
-import ME from '../../assets/me-about.jpg';
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {VscFolderLibrary} from 'react-icons/vsc';
@@ -16,33 +15,33 @@ const About = () => {
     </h2>
     <div class="container about__container">
       <div class="about__me">
-      <img src={ME} alt='img'/>
+      <div class="about__meImg"><img src='https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/WLS_1893.jpg?alt=media&token=507dd586-0d73-4f0b-8069-b776030023e3' alt='img'/></div>
       </div>
       <div class="about__content">
       <div class="about__cards">
         <article className='about__card'>
         <FaAward className='about__icon'/>
         <h5> Experience</h5>
-        <small>3+ Years Working</small>
+        <small>2+ Years Working</small>
         </article>
 
         <article className='about__card'>
         <FiUsers className='about__icon'/>
         <h5> Clients</h5>
-        <small>300+ Worldwide</small>
+        <small>Individuals & Organizations</small>
         </article>
 
         <article className='about__card'>
         <VscFolderLibrary className='about__icon'/>
         <h5> Projects</h5>
-        <small>80+ Completed</small>
+        <small>10+ Completed</small>
         </article>
       </div>
 
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quod ad autem nisi, molestias odio, 
-        quos quidem cupiditate consequuntur, nesciunt consequatur dolorem voluptatibus dolore dolores assumenda cum. 
-        Suscipit, non facere.
+      I’m a driven full stack web developer keen to learn new technologies as they advance and build inovation.
+      I am a team player and I love to help people improve their tech skills.
+      If you are looking for the best, I am your guy!
       </p>
 
       <a href="#contact" className='btn btn-primary'>Let's Talk</a>

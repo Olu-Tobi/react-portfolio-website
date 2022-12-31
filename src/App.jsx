@@ -15,9 +15,7 @@ export default function App(){
         <Nav/>
         <About/>
         <Experience/>
-        <Services/>
         <Portfolio/>
-        <Testimonials/>
         <Contacts/>
         <Footer/>
        </>
