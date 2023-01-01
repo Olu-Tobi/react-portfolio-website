@@ -3,6 +3,7 @@ import "./About.css";
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {VscFolderLibrary} from 'react-icons/vsc';
+import meAbout2 from '../../assets/meAbout2.jpg'
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
     </h2>
     <div class="container about__container">
       <div class="about__me">
-      <div class="about__meImg"><img src='https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/WLS_1893.jpg?alt=media&token=507dd586-0d73-4f0b-8069-b776030023e3' alt='img'/></div>
+      <div class="about__meImg"><img src={meAbout2} alt='img'/></div>
       </div>
       <div class="about__content">
       <div class="about__cards">

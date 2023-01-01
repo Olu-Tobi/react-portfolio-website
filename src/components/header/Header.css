@@ -90,4 +90,15 @@ header{
     .header__socials, .scroll__down{
         display: none;
     }
+    .me{
+        left: calc(50% - 9rem);
+        width: 18rem;
+        height: 18rem;
+        margin-top: 7rem;
+    }
+
+    .meImg{
+        width: 16rem;
+        height: 16rem;
+    }
 }

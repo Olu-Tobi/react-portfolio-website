@@ -2,6 +2,7 @@ import React from 'react'
 import "./Header.css"
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
+import me2 from '../../assets/me2.jpg'
 
 
 
@@ -19,7 +20,7 @@ const Header = () => {
 
         <div class="me">
           
-          <img class="meImg" src='https://firebasestorage.googleapis.com/v0/b/shop-c8953.appspot.com/o/WLS_1906d.jpg?alt=media&token=1cde6aa0-e5c0-4702-a5a3-e36a9f41d890' alt="me" />
+          <img class="meImg" src={me2} alt="me" />
           
         </div>
 
