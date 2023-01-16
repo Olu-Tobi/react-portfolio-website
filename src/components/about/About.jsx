@@ -40,7 +40,7 @@ const About = () => {
       </div>
 
       <p>
-      I’m a driven full stack web developer keen to learn new technologies as they advance and build inovation.
+      I’m a driven full stack web developer keen to learn new technologies as they advance and build innovation.
       I am a team player and I love to help people improve their tech skills.
       If you are looking for the best, I am your guy!
       </p>
