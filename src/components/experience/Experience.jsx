@@ -123,13 +123,7 @@ const Experience = () => {
         </div>
         </article>
 
-        <article className='experience__details'>
-        <BsPatchCheckFill className= "icon"/>
-        <div>
-        <h4>Aws</h4>
-        <small className='text-light'>Experienced</small>
-        </div>
-        </article>
+       
       </div>
       </div>
     </div>
