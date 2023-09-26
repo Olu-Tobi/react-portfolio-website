@@ -2,7 +2,7 @@ export const Data = [
   {
     id: 1,
     image: "/prep.png",
-    title: "Prep",
+    title: "Prep (Large screesize only)",
     github: "https://prep.com.ng/",
     demo: "https://prep.com.ng/",
   },
