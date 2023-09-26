@@ -3,16 +3,16 @@ export const Data = [
     id: 1,
     image: "/prep.png",
     title: "Prep (Large screesize only)",
-    github: "https://prep.com.ng/",
-    demo: "https://prep.com.ng/",
+    github: "https://www.prep.com.ng/",
+    demo: "https://www.prep.com.ng/",
   },
 
   {
     id: 2,
     image: "/experbuild.png",
     title: "Experbuild",
-    github: "https://experbuild.com/",
-    demo: "https://experbuild.com/",
+    github: "https://www.experbuild.com/",
+    demo: "https://www.experbuild.com/",
   },
 
   {
